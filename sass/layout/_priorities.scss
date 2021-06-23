@@ -1,0 +1,44 @@
+.priorities-list__tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.priorities-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.priorities-list__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.priorities-list__block {
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.priorities-list__block-icon {
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+.priorities-list__tittle-description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}

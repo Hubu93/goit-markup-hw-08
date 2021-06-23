@@ -1,0 +1,57 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0 60px 0;
+}
+
+.footer-container-right {
+  padding: 10px 0 40px 0;
+  margin-right: 100px;
+}
+
+.footer-container-righ-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: #ffffff;
+}
+
+.footer-container-left {
+  margin-right: 70px;
+}
+
+.footer__logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-font);
+  text-decoration: none;
+}
+
+.footer-input-list {
+  display: flex;
+}
+
+.address-list__item-link {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-style {
+  color: var(--white-font);
+}
+
+.address-list__item {
+  list-style: none;
+  margin-top: 9px;
+  &:first-child {
+    margin-top: 20px;
+  }
+}
