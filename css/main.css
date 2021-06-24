@@ -1046,8 +1046,8 @@ body {
 }
 
 .team-list-item-img {
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: 100%;
 }
 
 .team-list-convert {
@@ -1073,6 +1073,13 @@ body {
   letter-spacing: 0.03em;
   margin-top: 10px;
   color: var(--description-color);
+}
+
+@media screen and (min-width: 480px) {
+  .team-list-item-img {
+    width: 450px;
+    height: 460px;
+  }
 }
 
 @media screen and (min-width: 768px) {
