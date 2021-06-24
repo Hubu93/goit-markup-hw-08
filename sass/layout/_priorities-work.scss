@@ -1,5 +1,6 @@
 .priorities-work {
   padding: 0 0 94pxx 0;
+  display: none;
 }
 
 .priorities-work-title {
@@ -36,4 +37,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .priorities-work {
+    display: block;
+  }
 }

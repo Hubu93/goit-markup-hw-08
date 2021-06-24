@@ -1,9 +1,15 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 16px;
   .footer-container-right & {
     margin-top: 20px;
+  }
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
@@ -50,5 +56,22 @@
     width: 20px;
     height: 20px;
     fill: #ffffff;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    .footer-container-right & {
+      margin-top: 20px;
+    }
   }
 }
