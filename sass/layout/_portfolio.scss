@@ -24,7 +24,8 @@
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -85,6 +86,8 @@
 
 .portfolio-wrapper__img {
   display: block;
+  width: 250px;
+  height: 100%;
 }
 
 .portfolio-listwork__convert {
@@ -96,11 +99,9 @@
 }
 
 .portfolio-listwork__convert-title {
-  font-size: 18px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
-  text-align: left;
-  color: rgba(33, 33, 33, 1);
 }
 
 .portfolio-listwork__convert-description {
@@ -110,4 +111,87 @@
   color: var(--description-color);
   margin-top: 4px;
   text-align: left;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-wrapper__img {
+    display: block;
+    width: 450px;
+    height: 294px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+
+  .portfolio-listwork__convert-title {
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    color: rgba(33, 33, 33, 1);
+  }
+}
+
+.portfolio-list__item {
+  &:nth-child(4),
+  &:nth-child(5) {
+    margin-top: 15px;
+  }
+
+  .portfolio-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5 0px;
+  }
+
+  .portfolio-list__item {
+    &:nth-child(4),
+    &:nth-child(5) {
+      margin-top: 0px;
+    }
+  }
+
+  .portfolio-listwork__item {
+    &:last-child .portfolio-listwork__convert {
+      height: auto;
+    }
+  }
+
+  .portfolio-listwork__convert {
+    height: 146px;
+  }
+
+  .portfolio-wrapper__img {
+    display: block;
+    width: 354px;
+    height: 294px;
+  }
+
+  .portfolio-listwork__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .portfolio-listwork__convert {
+    height: auto;
+  }
+
+  .portfolio-listwork__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
