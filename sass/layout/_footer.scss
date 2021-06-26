@@ -3,10 +3,10 @@
   padding: 60px 0 60px 0;
 }
 
-// .footer-container {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-container-right {
   margin-top: 60px;
@@ -18,16 +18,15 @@
 .footer-container-righ-title {
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 1.14;
+  line-height: 1.17;
   color: #ffffff;
 }
 
 .footer-container-left {
-  margin-right: 70px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 480px;
+  width: 100%;
 }
 
 .address-list {
@@ -37,8 +36,8 @@
 .footer__logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--white-font);
   text-decoration: none;
@@ -53,7 +52,7 @@
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -73,18 +72,78 @@
 }
 
 @media screen and (min-width: 480px) {
+  .footer-container-left {
+    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-container-left {
+    width: 50%;
+  }
+
+  .footer-container-right {
+    margin-top: 10px;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+
+  .footer-container-left {
+    display: inline-block;
+    text-align: left;
+    margin-right: 70px;
+  }
+
+  .address-list {
+    text-align: left;
+  }
+
   .footer-container-right {
     padding: 10px 0 40px 0;
-    margin-right: 100px;
+    margin-right: 93px;
+    text-align: left;
+  }
+
+  .address-list__item {
+    margin-top: 9px;
   }
 
   .footer-input-list {
     display: flex;
+  }
+
+  .footer__logo-link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  .footer-container-right {
+    margin-top: 0;
+  }
+
+  .footer-input {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .footer-input-list__item {
+    &:last-child {
+      margin-top: 0;
+    }
   }
 }
