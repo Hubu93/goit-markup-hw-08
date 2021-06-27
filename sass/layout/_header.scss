@@ -140,13 +140,25 @@
     width: 100%;
     background: #2196f3;
     position: absolute;
-    bottom: -31px;
+    bottom: -38px;
     border-radius: 2px;
   }
 }
 
 .logo-style {
   color: var(--accent-hover-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+
+  .contact {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -157,11 +169,15 @@
     padding-right: 15px;
   }
 
-  .contact {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-  }
+  // .menu {
+  //   display: flex;
+  // }
+
+  // .contact {
+  //   margin-left: auto;
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   .header__logo-link {
     font-size: 26px;
