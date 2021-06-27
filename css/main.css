@@ -462,6 +462,17 @@ body {
   pointer-events: auto;
 }
 
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  color: #212121;
+  font-size: 40px;
+  width: 500px;
+  letter-spacing: 2%;
+}
+
 .clients-title {
   font-size: 28px;
   text-align: center;

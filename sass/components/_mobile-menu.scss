@@ -30,6 +30,18 @@
   &.is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: ;
+    pointer-events: auto;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    // font-family: 'Roboto', sans-serif;
+    color: #212121;
+    font-size: 40px;
+    width: 500px;
+    letter-spacing: 2%;
   }
 }
