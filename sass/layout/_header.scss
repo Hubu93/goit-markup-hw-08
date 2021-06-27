@@ -2,21 +2,34 @@
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+  &__mobile-menu-btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    line-height: 0;
+  }
+  &__mobile-menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+  & .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .menu,
 .contact {
-  display: flex;
+  display: none;
 }
 
 .header__logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color-font);
-  margin-right: 93px;
 }
 
 .contact__item {
@@ -83,12 +96,6 @@
   }
 }
 
-.contact {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
 .menu__item {
   position: relative;
   &:not(:last-child) {
@@ -140,4 +147,25 @@
 
 .logo-style {
   color: var(--accent-hover-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo-link {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
