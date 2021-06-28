@@ -84,7 +84,7 @@
   }
 }
 
-.portfolio-wrapper__img {
+.portfolio-listwork__item-link {
   display: block;
   width: 250px;
   height: 100%;
@@ -114,8 +114,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .portfolio-wrapper__img {
-    display: block;
+  .portfolio-listwork__item-link {
     width: 450px;
     height: 294px;
   }
@@ -169,8 +168,7 @@
     }
   }
 
-  .portfolio-wrapper__img {
-    display: block;
+  .portfolio-listwork__item-link {
     width: 354px;
     height: 294px;
   }
@@ -194,7 +192,7 @@
     flex-basis: calc((100% - 90px) / 3);
   }
 
-  .portfolio-wrapper__img {
+  .portfolio-listwork__item-link {
     width: 370px;
     height: 294px;
   }
