@@ -9,7 +9,7 @@
   font-weight: 700;
   text-align: center;
   font-size: 20px;
-  line-height: 1.17;
+  line-height: 1.5;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
@@ -151,4 +151,10 @@
   margin-top: 27px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-head {
+    line-height: 1.17;
+  }
 }

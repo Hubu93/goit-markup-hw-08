@@ -161,13 +161,12 @@
   }
 
   .portfolio-listwork__item {
+    &:first-child .portfolio-listwork__convert {
+      height: 146px;
+    }
     &:last-child .portfolio-listwork__convert {
       height: auto;
     }
-  }
-
-  .portfolio-listwork__convert {
-    height: 146px;
   }
 
   .portfolio-wrapper__img {

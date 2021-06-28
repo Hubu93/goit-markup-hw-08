@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 581px;
-  width: 528px;
+  min-height: 609px;
+  width: 450px;
   background-color: #fff;
   padding: 40px;
 }
@@ -29,4 +29,17 @@
 .modal-close-btn-icon {
   height: 11px;
   width: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    width: 528px;
+  }
 }
