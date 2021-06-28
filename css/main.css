@@ -1396,6 +1396,13 @@ body {
   .portfolio-listwork__item {
     flex-basis: calc((100% - 90px) / 3);
   }
+  .portfolio-wrapper__img {
+    width: 370px;
+    height: 294px;
+  }
+  .portfolio-listwork__item:first-child .portfolio-listwork__convert {
+    height: auto;
+  }
 }
 
 .priorities-work {
@@ -1631,8 +1638,8 @@ body {
     flex-basis: calc((100% - 120px) / 4);
   }
   .team-list-item-img {
-    width: 260px;
-    height: 270px;
+    width: 270px;
+    height: 260px;
   }
   .team-list-convert {
     padding-top: 30px;

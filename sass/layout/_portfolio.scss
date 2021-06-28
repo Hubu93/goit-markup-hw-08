@@ -193,4 +193,15 @@
   .portfolio-listwork__item {
     flex-basis: calc((100% - 90px) / 3);
   }
+
+  .portfolio-wrapper__img {
+    width: 370px;
+    height: 294px;
+  }
+
+  .portfolio-listwork__item {
+    &:first-child .portfolio-listwork__convert {
+      height: auto;
+    }
+  }
 }
