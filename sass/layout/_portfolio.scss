@@ -25,7 +25,6 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -84,7 +83,7 @@
   }
 }
 
-.portfolio-listwork__item-link {
+.portfolio-list-item-img {
   display: block;
   width: 250px;
   height: 100%;
@@ -114,7 +113,8 @@
 }
 
 @media screen and (min-width: 480px) {
-  .portfolio-listwork__item-link {
+  .portfolio-list-item-img {
+    display: block;І
     width: 450px;
     height: 294px;
   }
@@ -168,7 +168,8 @@
     }
   }
 
-  .portfolio-listwork__item-link {
+  .portfolio-list-item-img {
+    display: block;
     width: 354px;
     height: 294px;
   }
@@ -192,7 +193,8 @@
     flex-basis: calc((100% - 90px) / 3);
   }
 
-  .portfolio-listwork__item-link {
+  .portfolio-list-item-img {
+    display: block;
     width: 370px;
     height: 294px;
   }
