@@ -1544,6 +1544,9 @@ body {
   .priorities-list__item:nth-of-type(3), .priorities-list__item:nth-of-type(4) {
     margin-top: 30px;
   }
+  .priorities-list__item:nth-of-type(1), .priorities-list__item:nth-of-type(2), .priorities-list__item:nth-of-type(3) {
+    margin-bottom: 0;
+  }
 }
 
 .priorities-list__block-icon {
