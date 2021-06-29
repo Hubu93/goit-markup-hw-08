@@ -16,6 +16,14 @@
     padding-top: 48px;
     padding-right: 40px;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mobile-menu-wrapper {
+    position: fixed;
+    bottom: 48px;
   }
 
   &__close-btn {
@@ -51,11 +59,11 @@
   }
 
   &__link {
-    // font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #212121;
     font-size: 40px;
-    width: 500px;
-    letter-spacing: 2%;
+    font-weight: 500;
+    line-height: 1.17;
   }
 }
 

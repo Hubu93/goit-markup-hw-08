@@ -480,6 +480,14 @@ body {
   padding-top: 48px;
   padding-right: 40px;
   padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-menu .mobile-menu-wrapper {
+  position: fixed;
+  bottom: 48px;
 }
 
 .mobile-menu__close-btn {
@@ -515,10 +523,11 @@ body {
 }
 
 .mobile-menu__link {
+  font-family: 'Roboto', sans-serif;
   color: #212121;
   font-size: 40px;
-  width: 500px;
-  letter-spacing: 2%;
+  font-weight: 500;
+  line-height: 1.17;
 }
 
 .active-link {
@@ -1030,10 +1039,6 @@ body {
 
 .logo-style {
   color: var(--accent-hover-color);
-}
-
-.mobile-contacts {
-  margin-top: 300px;
 }
 
 .mobile-contact__tell-link .contact__abzac {
@@ -1584,7 +1589,8 @@ body {
 .team-title {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
+  line-height: 1.17;
 }
 
 .team-list__item:not(:last-child) {
