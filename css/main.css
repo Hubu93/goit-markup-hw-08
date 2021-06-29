@@ -325,8 +325,8 @@ body {
 
 .modal-form-checkbox-policy {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   margin-left: auto;
   margin-right: auto;
 }
@@ -407,6 +407,10 @@ body {
 @media screen and (min-width: 1200px) {
   .modal-form-head {
     line-height: 1.17;
+  }
+  .modal-form-checkbox-policy {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
